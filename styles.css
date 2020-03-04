@@ -1,0 +1,33 @@
+.row{
+    padding-top: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bg-light{
+    background-color: #e3f2fd;
+}
+
+.body{
+    background-color:#f0f0f5;
+}
+
+h1{
+    text-align: center;
+}
+.container {
+            width: 60vw;
+             height: 60vh;
+             background: #e3f2fd;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;
+             margin-top: 150px;
+         }
+         .box {
+             width: 350px;
+             height: 300px;
+             background-color: #f0f0f5;
+             padding-top: 40px;
+         }        
+    

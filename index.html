@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login para varios usuario</title>
+</head>
+<body>
+<div class="container">
+  <div class="box">
+    <h1>Login
+    </h1> 
+<form name="login"> 
+     <table width="200" border="0"> 
+       <tr> 
+         <th scope="row"><p>Usuario:</p></th> 
+         <td><span class="cnt"> 
+           <input name="usuario" type="text" class="Input" value="" size="20" /> 
+         </span></td> 
+       </tr> 
+       <tr> 
+         <th scope="row"><p>Senha:</p></th> 
+         <td><span class="cnt"> 
+           <input name="password" type="password" class="Input" value="" size="20" /> 
+         </span></td> 
+         <td><span class="cnt"> 
+           <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton"/> 
+         </span></td> 
+       </tr> 
+       <br>
+      
+     </table> 
+</form> 
+</div>
+</div>
+
+<script language="JavaScript"> 
+function Login(){ 
+var done=0; 
+var usuario=document.login.usuario.value; 
+var password=document.login.password.value; 
+if (usuario=="paciente@gmail.com" && password=="paciente123") { 
+window.location="./paciente.html"; 
+} 
+if (usuario=="02222" && password=="doutor123") { 
+window.location="./doutor.html"; 
+} 
+if (usuario=="" && password=="") { 
+window.location="errorpopup.html"; 
+} 
+} 
+        </script> 
+</center> 
+<script language="Javascript"> 
+<!-- Begin 
+document.oncontextmenu = function(){return false} 
+// End --> 
+</script>
+</body>
+</html>
